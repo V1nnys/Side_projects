@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+.container-wraper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.container-glass {
+  width: 70vw;
+  height: 70vh;
+  box-shadow: 0 5px 2rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+
+  backdrop-filter: blur(1.5px);
+}
+
+.music-container-wraper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+  height: 50vh;
+}
+
+.container-rpg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* --------------- Chrono Trigger -------------------- */
+
+#chrono {
+  background-image: url(../images/chronobg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
+
+.music-container {
+  background-color: white;
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0 20px 20px 0 rgba(41, 73, 79, 0.6);
+  display: flex;
+  padding: 20px 30px;
+  position: relative;
+  margin: 100px 0;
+  z-index: 10;
+}
+
+.img-container {
+  position: relative;
+  width: 110px;
+}
+
+.img-container::after {
+  content: ""; /* Ghost element */
+  background-color: white;
+  /* background-image: url("../images/pngegg.png"); */
+  background-size: cover;
+  background-position: center;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 51%;
+  bottom: 52%;
+  top: -0px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%); /* centraliza */
+  border: 1px solid black;
+}
+
+.img-container img {
+  width: inherit;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 1px solid black;
+
+  animation: rotate 15s linear infinite;
+
+  animation-play-state: paused;
+}
+
+/* Quando for adicionada(js) a classe play ao music container... */
+.music-container.play .img-container img {
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.action-button {
+  background-color: white;
+  border: 0;
+  color: rgba(0, 0, 0, 0.473);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.action-btn-big {
+  color: rgba(0, 0, 0, 0.623);
+  font-size: 30px;
+}
+
+.music-info {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: calc(60% - 40px);
+  padding: 10px 10px 10px 150px; /* centraliza o nome da música */
+  opacity: 0;
+  transform: translateY(0%);
+  transition: transform 0.3s ease-in opacity 0.3s ease-in;
+}
+
+.music-info h4 {
+  margin: 0;
+}
+
+/* Quando for adicionada(js) a classe play ao music container... */
+.music-container.play .music-info {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.progress-container {
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 100%;
+}
+
+.progress {
+  background-color: rgb(49, 99, 99);
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+/* ------------------- FF9 --------------------------- */
+
+#ff9 {
+  background-image: url(../images/ff9bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
+
+/* Shenmue */
+
+/* The Witcher 3 */
+
+/* FF7 */
+
+/* FF15 */

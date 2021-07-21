@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+body {
+  background-color: rgb(183, 177, 194);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-slide {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+  height: 50vh;
+  margin: 10vh auto;
+  border-radius: 10px;
+  box-shadow: 0 20px 30px black;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+}
+
+.container-items {
+  position: absolute;
+  display: flex;
+  width: 50vw;
+  height: 50vh;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.item {
+  width: 50vw;
+  height: 50vh;
+  transition: all 1s; /* animação */
+}
+
+.item:first-child {
+  margin-left: -100%;
+} /* O primero item é enviado para o final da lista */
+
+.item-img {
+  width: 50vw;
+  height: 50vh;
+  border-radius: 10px;
+} /* Por algum motivo as imagens não ficaram do mesmo tamanho para se
+    encaixarem no slide, então adicionei <style> no JS e deu certo! */
+
+.action-button {
+  font: bold 30px sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  z-index: 1;
+  user-select: none;
+  opacity: 0;
+  transition: all 1s;
+}
+
+#previous:hover {
+  opacity: 1;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#next:hover {
+  opacity: 1;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+} /* Atribuir class e id em uma mesma div (previous e next) ajudou a 
+ criar o efeito radius apenas de um lado pra cada um.
+
+ /* -------------------------------------------- parte 2 --------------------------------------- */
+
+.container-rpg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-rpg ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.container-rpg ul a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.container-rpg ul a:hover {
+  font-weight: bolder;
+  color: rgb(231, 158, 0);
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.932);
+  font-size: 20px;
+  transition: 0.5s;
+  position: relative;
+  top: -7px;
+}
