@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -37,6 +37,40 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.container-rpg-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 2rem;
+  background-color: rgba(0, 0, 0, 0.664);
+}
+
+.container-rpg-menu ul {
+  display: flex;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.container-rpg-menu ul a {
+  display: flex;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(207, 207, 207);
+}
+
+.container-rpg-menu ul a:hover {
+  font-weight: bolder;
+  color: rgb(231, 158, 0);
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.932);
+  font-size: 20px;
+  transition: 0.5s;
+  position: relative;
+  bottom: -3px;
 }
 /* --------------- Chrono Trigger -------------------- */
 
@@ -67,7 +101,7 @@
 
 .img-container::after {
   content: ""; /* Ghost element */
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.829);
   /* background-image: url("../images/pngegg.png"); */
   background-size: cover;
   background-position: center;
@@ -177,7 +211,7 @@
 
 #ff9 {
   background-image: url(../images/ff9bg.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
@@ -185,7 +219,23 @@
 
 /* Shenmue */
 
+#shenmue {
+  background-image: url(../images/shenmue.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
+
 /* The Witcher 3 */
+
+#tw3 {
+  background-image: url(../images/the-witcher-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
 
 /* FF7 */
 
