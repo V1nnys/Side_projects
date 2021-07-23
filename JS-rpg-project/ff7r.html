@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style-pages.css" />
+    <title>Final Fantasy VII</title>
+  </head>
+  <header>
+    <nav>
+      <div class="container-rpg-menu">
+        <ul>
+          <li><a href="chrono.html">Chrono Trigger</a></li>
+          <li><a href="ff9.html">Final Fantasy IX</a></li>
+          <li><a href="shenmue.html">Shenmue</a></li>
+          <li><a href="tw3.html">The Witcher III</a></li>
+          <li><a href="ff7r.html">Final Fantasy VIIR</a></li>
+          <li><a href="ffxv.html">Final Fantasy XV</a></li>
+        </ul>
+      </div>
+      <!--container-rpg-->
+    </nav>
+  </header>
+  <body>
+    <div class="container-wraper" id="ff7r">
+      <div class="container-glass">
+        <div class="container-rpg">
+          <div class="music-container-wraper">
+            <div class="music-container">
+              <div class="music-info">
+                <h4 id="title">Ukulele</h4>
+                <div class="progress-container">
+                  <div class="progress"></div>
+                </div>
+                <!--progress-container-->
+              </div>
+              <!--music-info-->
+
+              <audio src="./songs/CT01-Intro.mp3" id="audio"></audio>
+
+              <div class="img-container">
+                <img
+                  src="./images/CT01-intro.jpg"
+                  alt="music-cover"
+                  id="cover"
+                />
+              </div>
+              <!--img-container-->
+
+              <div class="navigation">
+                <button id="prev" class="action-button">
+                  <i class="fas fa-backward"></i>
+                </button>
+                <button id="play" class="action-button action-btn-big">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button id="next" class="action-button">
+                  <i class="fas fa-forward"></i>
+                </button>
+              </div>
+              <!--navigation-->
+            </div>
+            <!--music-container-->
+          </div>
+          <!--music-container-wraper-->
+        </div>
+        <!--container-rpg-->
+      </div>
+      <!--container-glass-->
+    </div>
+    <!--container-wraper-->
+
+    <script src="./js/ff7r.js"></script>
+  </body>
+</html>
