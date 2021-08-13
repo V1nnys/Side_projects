@@ -5,8 +5,8 @@ function carregar() {
   var hora = data.getHours();
   var minutos = data.getMinutes();
 
-  //var hora = 12;
-  msg.innerHTML = `Agora são ${hora} horas e ${minutos} minutos.`;
+  //var hora = 18;
+  msg.innerHTML = `Bom dia!`;
   if (hora >= 0 && hora < 12) {
     //Bom dia!
     img.src = "manha.jpg";
@@ -14,10 +14,41 @@ function carregar() {
   } else if (hora >= 12 && hora < 18) {
     //Boa tarde!
     img.src = "tarde.jpg";
+    msg.innerHTML = `Boa tarde!`;
     document.body.style.background = "#eba865";
   } else {
     //Boa noite!
     img.src = "noite.jpg";
+    msg.innerHTML = `Boa noite!`;
     document.body.style.background = "#3a4466";
   }
 }
+
+function showTime() {
+  var date = new Date();
+  var h = date.getHours(); // 0 - 23
+  var m = date.getMinutes(); // 0 - 59
+  var s = date.getSeconds(); // 0 - 59
+  var session = "AM";
+
+  if (h == 0) {
+    h = 12;
+  }
+
+  if (h > 12) {
+    h = h - 12;
+    session = "PM";
+  }
+
+  h = h < 10 ? "0" + h : h;
+  m = m < 10 ? "0" + m : m;
+  s = s < 10 ? "0" + s : s;
+
+  var time = h + ":" + m + ":" + s + " " + session;
+  document.getElementById("MyClockDisplay").innerText = time;
+  document.getElementById("MyClockDisplay").textContent = time;
+
+  setTimeout(showTime, 1000);
+}
+
+showTime();

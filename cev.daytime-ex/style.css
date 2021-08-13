@@ -33,3 +33,12 @@ footer {
   text-align: center;
   font-style: italic;
 }
+
+.clock {
+  width: 99%;
+  height: 100px;
+  text-align: center;
+  color: #17d4fe;
+  font-size: 40px;
+  letter-spacing: 7px;
+}
