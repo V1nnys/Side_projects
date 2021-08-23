@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+:root {
+  --laranja: rgb(255, 78, 0);
+  --laranja-fonte: rgb(255, 95, 25);
+  --bg-color: rgb(47, 40, 56); /* Fonte também */
+  --fonte-padrao: rgb(91, 89, 94);
+  --verde: rgb(34, 202, 39);
+}
+
+/* ----------------------------Header-------------------------- */
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 95vh;
+}
+
+html,
+body {
+  background-color: var(--fonte-padrao);
+}
+
+.container {
+  display: flex;
+  width: 98vw;
+}
+
+.header-content h2.logo {
+  position: absolute;
+  top: 0;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(201, 201, 201);
+  width: 40%;
+  height: 100%;
+}
+
+.line {
+  position: absolute;
+  left: 0;
+  width: 10%;
+  height: 1.5px;
+  background-color: var(--fonte-padrao);
+}
+
+.chamada {
+  position: relative;
+  left: -20px;
+}
+
+.header-content2 {
+  background-image: url("../img/pizza-1.jpg");
+  background-color: honeydew;
+  background-position: top;
+  background-size: 80% 100%;
+  background-repeat: no-repeat;
+  width: 60%;
+  height: 100%;
+}
+
+.header-content h2 span {
+  color: var(--laranja-fonte);
+}
+
+ul {
+  display: flex;
+  width: 500px;
+  padding: 0 2% 0 10%;
+  list-style-type: none;
+}
+
+ul li {
+  padding-left: 40px;
+}
+
+ul li a {
+  color: var(--fonte-padrao);
+  text-decoration: none;
+}
