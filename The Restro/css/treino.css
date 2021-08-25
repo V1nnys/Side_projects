@@ -20,19 +20,20 @@
 header {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 95vh;
 }
 
 html,
 body {
+  width: 100%;
   background-color: var(--fonte-padrao);
 }
 
 aside {
   display: flex;
   background-color: rgb(243, 243, 243);
-  width: 5vw;
+  width: 4vw;
   height: 100%;
   align-items: center;
 }
@@ -40,25 +41,15 @@ aside {
 .line {
   position: relative;
   top: -115px;
-  /* left: 1px; */
   width: 100%;
   height: 1.5px;
   background-color: var(--fonte-padrao);
   padding: 0 2%;
 }
 
-/* .linha2 {
-  position: relative;
-  top: 215px;
-  width: 100%;
-  height: 1.5px;
-  background-color: var(--fonte-padrao);
-  padding: 0 2%;
-} */
-
 .container {
   display: flex;
-  width: 99.5vw;
+  width: 100%;
 }
 
 .header-content h2.logo {
@@ -108,11 +99,15 @@ aside {
   margin-top: 5%;
 }
 
+.header-content button:hover {
+  background-color: var(--laranja-fonte);
+}
+
 .header-content2 {
-  background-image: url("../img/pizza-1.jpg");
-  background-color: honeydew;
+  background-image: url("../img/prato-9.jpg");
+  background-color: rgb(243, 243, 243);
   background-position: left;
-  background-size: 90% 100%;
+  background-size: 95% 100%;
   background-repeat: no-repeat;
   width: 60%;
   height: 100%;
@@ -125,12 +120,12 @@ aside {
 ul {
   display: flex;
   width: 500px;
-  padding: 0 2% 0 22%;
+  margin: 0 auto;
   list-style-type: none;
 }
 
 ul li {
-  padding: 1rem 1rem 0 2rem;
+  padding: 30px;
 }
 
 ul li a {
@@ -149,4 +144,100 @@ ul li a {
   cursor: pointer;
 }
 
-/* =====================MEDIA QUERRIES====================== */
+.social-media ul i:hover {
+  color: var(--laranja-fonte);
+}
+
+/* ------------------section-about------------------------- */
+
+section.about {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  background-color: rgb(243, 243, 243);
+  align-items: center;
+}
+
+.abt-wraper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: -7%;
+  bottom: -5%;
+}
+
+.div-pic {
+  width: 800px;
+  height: 400px;
+  background-image: url("../img/prato-8.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: -10%;
+}
+
+.div-abt {
+  width: 800px;
+  height: 400px;
+  background-color: var(--bg-color);
+  display: block;
+}
+
+.div-abt h2 {
+  color: var(--laranja-fonte);
+  padding: 40px 3% 0 400px;
+}
+
+.div-abt h1 {
+  color: white;
+  padding: 10px 2% 0 300px;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+.div-abt p {
+  color: white;
+  text-align: right;
+  padding: 10px 6%;
+  max-width: 600px;
+}
+
+.div-abt button {
+  width: 150px;
+  height: 50px;
+  background-color: var(--laranja);
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  border: 0;
+  cursor: pointer;
+  margin: 10px 2% 0 410px;
+}
+
+.div-abt button:hover {
+  background-color: var(--laranja-fonte);
+}
+
+.ball {
+  width: 400px;
+  height: 300px;
+  background-image: linear-gradient(orange, var(--laranja));
+  border-radius: 50%;
+  position: relative;
+  left: 5%;
+  top: -220px;
+  position: relative;
+  bottom: -10%;
+  z-index: 1;
+}
+
+footer {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+/* =====================MEDIA-QUERIES====================== */
