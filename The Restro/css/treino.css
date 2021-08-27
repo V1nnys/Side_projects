@@ -28,6 +28,7 @@ html,
 body {
   width: 100%;
   background-color: var(--fonte-padrao);
+  /* overflow-x: hidden; */
 }
 
 aside {
@@ -253,7 +254,7 @@ footer {
 .menu-bg {
   display: block;
   width: 1400px;
-  height: 800px;
+  height: 100%;
   background-color: rgb(255, 255, 255);
   text-align: center;
 }
@@ -281,7 +282,6 @@ footer {
   margin-top: 70px;
   width: 90%;
   height: 70%;
-  /* background-color: blanchedalmond; */
   display: grid;
   grid-template-columns: 50% 50%;
   text-align: left;
@@ -290,25 +290,21 @@ footer {
 .content1 {
   width: 100%;
   height: 100%;
-  /* background-color: black; */
 }
 
 .content2 {
   width: 100%;
   height: 100%;
-  /* background-color: rgb(73, 2, 2); */
 }
 
 .content3 {
   width: 100%;
   height: 100%;
-  /* background-color: rgb(14, 29, 4); */
 }
 
 .content4 {
   width: 100%;
   height: 100%;
-  /* background-color: rgb(11, 2, 59); */
 }
 
 .menu-cnt h2 {
@@ -318,12 +314,122 @@ footer {
 }
 
 .menu-cnt p {
-  padding: 10px 2% 0 30px;
+  padding: 30px 2% 0 30px;
 }
 
 .menu-cnt span {
   color: rgb(187, 184, 184);
-  padding: 10px 2% 0 30px;
+  padding: 30px 2% 0 30px;
+}
+
+.ball-menu {
+  width: 500px;
+  height: 480px;
+  background-image: linear-gradient(orange, var(--laranja));
+  border-radius: 50%;
+  position: absolute;
+  top: -220px;
+  right: -170px;
+}
+
+/* ---------------------section-browse---------------------------- */
+
+body.menu {
+  overflow-x: hidden;
+}
+
+section.browse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 900px;
+}
+
+.browse .info {
+  text-align: left;
+  padding: 50px 0 10px 20px;
+}
+
+.info h2 {
+  font-size: 30px;
+  padding-left: 50px;
+  color: var(--laranja-fonte);
+}
+
+.info h1 {
+  font-size: 40px;
+  padding: 10px 0 0 50px;
+  color: var(--fonte-padrao);
+}
+
+.info ul {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  font-size: 25px;
+  color: var(--fonte-padrao);
+  cursor: pointer;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 70%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.pic-wrap {
+  border: 5px solid white;
+  transition: 0.4s;
+}
+
+.pic-wrap:hover {
+  outline: 4px solid var(--laranja-fonte);
+  outline-offset: -9px;
+}
+
+.gallery .pic1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/prato-3.jpeg");
+  background-position: center;
+}
+
+.gallery .pic2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/prato-4.jpg");
+  background-position: center;
+}
+
+.gallery .pic3 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/prato-2.jpg");
+  background-position: center;
+}
+
+.gallery .pic4 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/prato-6.jpg");
+  background-position: center;
+}
+
+.menu-bg button {
+  width: 150px;
+  height: 50px;
+  background-color: var(--laranja);
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  border: 0;
+  cursor: pointer;
+  margin-top: 1%;
+  position: relative;
+  right: -28%;
 }
 
 /* =====================MEDIA-QUERIES====================== */
