@@ -159,7 +159,7 @@ ul li a {
 
 section.about {
   width: 100%;
-  height: 95vh;
+  height: 800px;
   display: flex;
   background-color: rgb(243, 243, 243);
   align-items: center;
@@ -173,9 +173,7 @@ section.about {
   width: 80%;
   height: 100%;
   position: relative;
-  /* left: -7%; */
   bottom: -5%;
-  /* margin-left: 10%; */
 }
 
 .div-pic {
@@ -240,12 +238,12 @@ section.about {
   position: absolute;
   left: -70px;
   top: 0px;
-
   z-index: 1;
 }
 
 footer {
   width: 100%;
+  height: 50px;
   background-color: white;
   text-align: center;
 }
@@ -568,6 +566,145 @@ section.browse {
     right: 2.2%;
     top: 3%;
     cursor: pointer;
+  }
+
+  .ball {
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 25%;
+    height: 22%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .abt-wraper {
+    display: block;
+  }
+
+  .div-pic {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    top: 0%;
+  }
+
+  .div-abt {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .div-abt h2 {
+    padding: 10px 3% 0 0px;
+  }
+
+  .div-abt h1 {
+    padding: 0px 2% 0 0px;
+    font-size: 18px;
+  }
+
+  .div-abt p {
+    font-size: 12px;
+    padding: 10px 4%;
+    max-width: 600px;
+  }
+
+  .div-abt button {
+    width: 120px;
+    height: 50px;
+    margin: 0;
+    letter-spacing: 0;
+  }
+
+  .ball {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 30%;
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  section.about {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    background-color: rgb(243, 243, 243);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-content h2.logo {
+    font-size: 22px;
+    padding: 20px;
+  }
+
+  .chamada h2 {
+    font-size: 15px;
+  }
+
+  .chamada p {
+    font-size: 35px;
+  }
+
+  .header-content2 {
+    background-size: cover;
+  }
+
+  .header-content button {
+    width: 120px;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header-content button {
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .chamada h2 {
+    font-size: 13px;
+    padding: 0 4%;
+  }
+
+  .chamada p {
+    font-size: 25px;
+  }
+
+  .div-pic {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    top: 0%;
+  }
+
+  .div-abt {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .social-media {
+    display: grid;
+    grid-template-columns: 10%;
+    height: 40%;
+    margin-top: 40px;
+  }
+
+  .social-media ul {
+    margin-left: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px;
+    cursor: pointer;
+  }
+
+  .ball {
+    left: -50px;
+    height: 15vh;
   }
 }
 
