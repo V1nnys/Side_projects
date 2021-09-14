@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cedarville Cursive", cursive;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(74, 83, 109);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delta {
+  width: 70vw;
+  height: 500px;
+  background-color: rgb(2, 36, 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 15px solid rgb(59, 29, 11);
+}
+
+.delta h2 {
+  color: white;
+  font-size: 50px;
+}
+
+.delta p {
+  color: white;
+  font-size: 55px;
+}
+
+.delta button {
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  background-color: green;
+  cursor: pointer;
+}

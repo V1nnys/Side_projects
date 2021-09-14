@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="delta.css" />
+    <title>Equação do segundo grau</title>
+  </head>
+
+  <body>
+    <div class="delta">
+      <div class="delta-content">
+        <h2>Resolvendo equação.</h2>
+        <p id="calc">Sendo a fórmula: b²-4a.c = 0</p>
+        <h2>*Adicione os valores abaixo.</h2>
+        <button type="button" onclick="valores()">Valores</button>
+      </div>
+      <!--delta-content-->
+    </div>
+    <!--delta-->
+    <script>
+      function valores() {
+        var a = Number(window.prompt(`valor de A`));
+        var b = Number(window.prompt(`valor de B`));
+        var c = Number(window.prompt(`valor de C`));
+
+        var delta1 = b * b;
+        var delta2 = a * c - 4;
+        var delta3 = delta2 / delta1;
+
+        console.log(delta3);
+
+        document.getElementById(
+          `calc`
+        ).innerHTML = `Valores: A = ${a}, B = ${b} e C = ${c}. 
+        </br>
+        Delta = ${delta3}`;
+      }
+
+      // var a = Number(window.prompt(`valor de A`));
+      // var b = Number(window.prompt(`valor de B`));
+      // var c = Number(window.prompt(`valor de C`));
+    </script>
+  </body>
+</html>
