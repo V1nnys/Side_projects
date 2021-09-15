@@ -25,22 +25,28 @@
         var b = Number(window.prompt(`valor de B`));
         var c = Number(window.prompt(`valor de C`));
 
-        var delta1 = b * b;
-        var delta2 = a * c - 4;
-        var delta3 = delta2 / delta1;
+        var delta = b ** 2 - 4 * a * c;
 
-        console.log(delta3);
+        //X
+        var x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        var x2 = (-b - Math.sqrt(delta)) / (2 * a);
 
-        document.getElementById(
-          `calc`
-        ).innerHTML = `Valores: A = ${a}, B = ${b} e C = ${c}. 
+        if (delta < 0) {
+          document.getElementById(
+            `calc`
+          ).innerHTML = `Valores: A = ${a}, B = ${b} e C = ${c}.
         </br>
-        Delta = ${delta3}`;
+        Delta = ${delta} </br>
+        Delta < 0, possui raízes irreais.`;
+        } else {
+          document.getElementById(
+            `calc`
+          ).innerHTML = `Valores: A = ${a}, B = ${b} e C = ${c}.
+          </br>
+          Delta = ${delta} </br>
+          X' = ${x1}, X" = ${x2}`;
+        }
       }
-
-      // var a = Number(window.prompt(`valor de A`));
-      // var b = Number(window.prompt(`valor de B`));
-      // var c = Number(window.prompt(`valor de C`));
     </script>
   </body>
 </html>
