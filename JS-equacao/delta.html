@@ -12,7 +12,7 @@
     <div class="delta">
       <div class="delta-content">
         <h2>Resolvendo equação.</h2>
-        <p id="calc">Sendo a fórmula: b²-4a.c = 0</p>
+        <p id="calc">Sendo a fórmula: b²-4a.c e X = -b +- √Δ / 2.a</p>
         <h2>*Adicione os valores abaixo.</h2>
         <button type="button" onclick="valores()">Valores</button>
       </div>
@@ -27,25 +27,76 @@
 
         var delta = b ** 2 - 4 * a * c;
 
-        //X
+        var delta1 = b ** 2;
+        var delta2 = -4 * a * c;
+        var delta3 = ``;
+
+        if (delta2 > 0) {
+          delta3 += `${delta1} +${delta2}`;
+        } else {
+          delta3 = `${delta1} ${delta2}`;
+        }
+
+        var aString = ``;
+        var bString = ``;
+        var cString = ``;
+
+        if (a < 0) {
+          aString += `(${a})`;
+        } else {
+          aString += `${a}`;
+        }
+
+        if (b < 0) {
+          bString += `(${b})`;
+        } else {
+          bString += `${b}`;
+        }
+
+        if (c < 0) {
+          cString += `(${c})`;
+        } else {
+          cString += `${c}`;
+        }
+
+        var stringMontada = `${bString}x² -4 .${aString} .${cString}`;
+
+        //X  Δ √
+
         var x1 = (-b + Math.sqrt(delta)) / (2 * a);
         var x2 = (-b - Math.sqrt(delta)) / (2 * a);
+        var raizX = -1 * b;
 
-        if (delta < 0) {
-          document.getElementById(
-            `calc`
-          ).innerHTML = `Valores: A = ${a}, B = ${b} e C = ${c}.
+        var raizDiv = 2 * aString;
+
+        document.getElementById(`calc`).innerHTML = `
+        A = ${a}, B = ${b} e C = ${c}.
         </br>
-        Delta = ${delta} </br>
-        Delta < 0, possui raízes irreais.`;
-        } else {
-          document.getElementById(
-            `calc`
-          ).innerHTML = `Valores: A = ${a}, B = ${b} e C = ${c}.
-          </br>
-          Delta = ${delta} </br>
-          X' = ${x1}, X" = ${x2}`;
-        }
+        Δ = ${stringMontada}
+        </br>
+        Δ = ${delta3}
+        </br>
+        Delta = ${delta}
+        </br>
+        <p class="raizesx">
+        X'= <span class="x1"> -${bString} + √${delta} </span> </br>
+        <span class="divisaox"> 2 x ${aString} </span>
+        </br>
+        X'= <span class="x1"> ${raizX} + ${Math.sqrt(
+          delta
+        )}  </span> = ${x1} </br>
+        <span class="divisaox"> ${raizDiv} </span>
+
+        </br>
+        X"= <span class="x1"> -${bString} - √${delta} </span> </br>
+        <span class="divisaox"> 2 x ${aString} </span>
+        </br>
+        X"= <span class="x1"> ${raizX} - ${Math.sqrt(
+          delta
+        )}  </span> = ${x2} </br>
+        <span class="divisaox"> ${raizDiv} </span>
+        </p>
+        `;
       }
     </script>
   </body>

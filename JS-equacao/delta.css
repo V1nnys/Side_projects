@@ -14,32 +14,62 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .delta {
-  width: 70vw;
-  height: 600px;
+  width: 75vw;
+  height: 850px;
   background-color: rgb(2, 36, 2);
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   border: 15px solid rgb(59, 29, 11);
+}
+
+.delta-content {
+  /* background-color: rgb(24, 24, 53); */
+  height: 600px;
+  position: relative;
+  top: -100px;
 }
 
 .delta h2 {
   color: white;
-  font-size: 50px;
+  font-size: 40px;
+  margin-left: 40px;
 }
 
 .delta p {
   color: white;
-  font-size: 55px;
+  font-size: 50px;
+  margin-left: 50px;
 }
 
 .delta button {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
   width: 200px;
   height: 50px;
   font-size: 30px;
   background-color: green;
   cursor: pointer;
+}
+
+.raizesx {
+  /* background-color: rgb(37, 59, 15); */
+  position: relative;
+  right: -650px;
+  top: -450px;
+  padding-left: 80px;
+  border-left: 2px solid white;
+}
+
+.x1 {
+  border-bottom: 2.2px solid white;
+}
+
+.divisaox {
+  margin-left: 150px;
 }
