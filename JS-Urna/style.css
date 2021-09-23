@@ -1,0 +1,110 @@
+html {
+  width: 100vw;
+  height: 100%;
+  background-color: rgb(93, 108, 116);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.urna {
+  background-color: #dbd5c9;
+  padding: 30px;
+  display: flex;
+}
+
+.tela {
+  width: 450px;
+  height: 320px;
+  background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+  border: 2px solid grey;
+  display: flex;
+  flex-direction: column;
+}
+
+.teclado {
+  margin-left: 30px;
+  background-color: #403a3a;
+}
+
+.teclado-linha {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.teclado-botao {
+  width: 70px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px #555;
+}
+
+.branco {
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+.corrige {
+  background-color: #f09046;
+  color: black;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+.confirma {
+  background-color: #48c079;
+  color: black;
+  font-size: 12px;
+  width: 85px;
+  height: 50px;
+  border-radius: 2px;
+}
+
+.d-1 {
+  flex: 1;
+  display: flex;
+}
+
+.d-2 {
+  height: 50px;
+  font-size: 14px;
+  border-top: 2px solid black;
+  padding-left: 8px;
+}
+
+.d-1-left {
+  flex: 1;
+}
+
+.d-1-1 {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.d-1-2 {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.d-1-right {
+  width: 90px;
+}
