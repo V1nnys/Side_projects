@@ -42,6 +42,16 @@ let etapas = [
           { url: "marge.jpg", legenda: "Vice-Prefeita", small: true },
         ],
       },
+      {
+        numero: "66",
+        nome: "Krusty",
+        partido: "DVL",
+        Vice: "Burns",
+        fotos: [
+          { url: "krusty.jpg", legenda: "Prefeito" },
+          { url: "burns.jpg", legenda: "Vice-Prefeito", small: true },
+        ],
+      },
     ],
   },
 ];
