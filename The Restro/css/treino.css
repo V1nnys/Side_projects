@@ -137,9 +137,31 @@ ul li a {
   text-shadow: 2px 3px 9px black;
 }
 
+/* -----------------menu-mobile-------------------------------- */
+
 .menu-mobile {
   display: none;
 }
+
+.wrap-mobile {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  background-color: white;
+}
+
+.close {
+  display: none;
+}
+
+.wrap-mobile ul {
+  flex-direction: column;
+  text-align: center;
+}
+
+/* ------------------------social-media----------------------- */
 
 .social-media {
   width: 100%;
@@ -698,6 +720,7 @@ section.depoimentos {
     right: 2.2%;
     top: 3%;
     cursor: pointer;
+    z-index: 1;
   }
 
   .ball {

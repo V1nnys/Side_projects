@@ -1,25 +1,47 @@
-function showMenu() {
-  let menushow = document.getElementById(`m-mobile`);
-  window.alert("Menu funcionando");
-}
+// let movex =
+// let menushow = document.getElementById(`m-mobile`);
 
-// function swipeRight() {
-//   document.getElementById(`dep-content`).classList.remove("dep-content");
-//   document.getElementById(`dep-content`).classList.add(`swipe`);
+// function showMenu() {
+//   document
+//     .getElementById(`wrap-mobile`)
+//     .setAttribute("style", "display: block;");
+//   document
+//     .getElementById("m-mobile")
+//     .setAttribute(
+//       "style",
+//       "position: absolute; background-image: url('../img/sinal-da-cruz.png')"
+//     );
+
+//   menushow.innerHTML = `
+//     <div class="menu-mobile" id="m-mobile" onclick="closeMenu()"></div>
+//     `;
 // }
 
-// function swiperLeft() {
-//   document.getElementById(`dep-content`).classList.remove("swipe");
-//   document.getElementById(`dep-content`).classList.add(`dep-content`);
+// function closeMenu() {
+//   menushow.innerHTML = `
+//     <div class="menu-mobile" id="m-mobile" onclick="showMenu()"></div>
+//     `;
 // }
+
+/*-------------------JQUERY----------------------- */
+
+$(function () {
+  $(".menu-mobile").click(function () {
+    $(".wrap-mobile").find("ul").slideToggle();
+  });
+});
+
+/*--------------Menu-mobile------------------------ */
+
+let position = 0;
 
 function swipeRight() {
+  if (position >= -45) {
+    position -= 10;
+  }
   document
     .getElementById("dep-content")
-    .setAttribute("style", "position:relative;left:-45%;");
-  if (scrollX < 1) {
-    //window.alert("Funciona!");
-  }
+    .setAttribute("style", `position:relative;left:${position}%;`);
 }
 
 function swiperLeft() {
