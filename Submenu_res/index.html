@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+</head>
+
+<style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Helvetica;
+    }
+
+    .container{
+        max-width: 1280px;
+        padding: 0 2%;
+        margin: 0 auto;
+    }
+
+    .clear{clear:both}
+
+    .logo{
+        color: white;
+        float: left;
+    }
+
+    header{
+        padding: 10px 0;
+        background: #1976d2;
+    }
+
+    nav.menu-desktop{
+        float: right;
+    }
+
+    nav.menu-desktop > ul{
+        position: relative;
+        top: 4px;
+        list-style-type: none;
+    }
+
+    nav.menu-desktop > ul > li{
+        position: relative;
+        display: inline-block;
+        font-size: 16px;
+        margin: 0 15px;
+    }
+
+    nav.menu-desktop > ul > li:hover > ul.submenu-desktop{
+        display: block;
+    }
+
+    nav.menu-desktop a{
+        text-decoration: none;
+        color: white;
+    }
+
+    ul.submenu-desktop{
+        list-style-type: none;
+        display: none;
+        position: absolute;
+        left: 8px;
+        top: 20px;
+        width: 300px;
+        padding: 8px 0;
+        background: #01579b;
+    }
+
+    ul.submenu-desktop li{
+        padding: 8px;
+        border-bottom: 1px solid white;
+    }
+
+    nav.menu-desktop a:hover{
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h2>Logomarca</h2>
+            </div><!--logo-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                        <ul class="submenu-desktop">
+                            <li><a href="">Sessão 1</a></li>
+                            <li><a href="">Sessão 2</a></li>
+                            <li><a href="">Sessão 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Sobre</a>
+                        <ul class="submenu-desktop">
+                            <li><a href="">Sessão 1</a></li>
+                            <li><a href="">Sessão 2</a></li>
+                            <li><a href="">Sessão 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contato</a>
+                        <ul class="submenu-desktop">
+                            <li><a href="">Sessão 1</a></li>
+                            <li><a href="">Sessão 2</a></li>
+                            <li><a href="">Sessão 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </div>
+    </header>
+
+</body>
+</html>
