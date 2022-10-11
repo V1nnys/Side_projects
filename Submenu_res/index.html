@@ -63,7 +63,7 @@
         list-style-type: none;
         display: none;
         position: absolute;
-        left: 8px;
+        right: 0;
         top: 20px;
         width: 300px;
         padding: 8px 0;
@@ -78,6 +78,53 @@
     nav.menu-desktop a:hover{
         text-decoration: underline;
     }
+
+    /* Menu-mobile */
+
+    nav.menu-mobile{
+        float: right;
+        display: none;
+    }
+
+    nav.menu-mobile > ul{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        border-top: #ccc;
+        background: white;
+        width: 100%;
+        list-style-type: none;
+    }
+
+    nav.menu-mobile > ul > li{
+        width: 100%;
+        display: inline-block;
+        border-bottom: 1px solid rgb(86, 86, 86);
+        padding: 10px 8px;
+    }
+
+    ul.submenu-mobile{
+        list-style-type: none;
+        padding: 8px 15px;
+    }
+
+    nav.menu-mobile a{
+        text-decoration: none;
+        color: #01579b;
+    }
+
+    nav.menu-mobile > i{
+        cursor: pointer;
+        font-size: 25px;
+        color: white;
+    }
+
+    @media screen and (max-width: 768px){
+        nav.menu-desktop{display: none;}
+        nav.menu-mobile{display: block;}
+    }
+
 </style>
 
 <body>
@@ -86,6 +133,7 @@
             <div class="logo">
                 <h2>Logomarca</h2>
             </div><!--logo-->
+           
             <nav class="menu-desktop">
                 <ul>
                     <li>
@@ -112,9 +160,45 @@
                     </li>
                 </ul>
             </nav>
+            <nav class="menu-mobile">
+                <i class="fa fa-bars"></i>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                        <ul class="submenu-mobile">
+                            <li><i class="fa-solid fa-angles-right"></i><a href="">Sessão 1</a></li>
+                            <li><i class="fa-solid fa-angles-right"></i><a href="">Sessão 2</a></li>
+                            <li><i class="fa-solid fa-angles-right"></i><a href="">Sessão 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Sobre</a>
+                        <ul class="submenu-mobile">
+                            <li><i class="fa-solid fa-angles-right"></i><a href="">Sessão 1</a></li>
+                            <li><i class="fa-solid fa-angles-right"></i><a href="">Sessão 2</a></li>
+                            <li><i class="fa-solid fa-angles-right"></i><a href="">Sessão 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Contato</a>
+                        <ul class="submenu-mobile">
+                            <li><i class="fa-solid fa-angles-right"></i><a href="">Sessão 1</a></li>
+                            <li><i class="fa-solid fa-angles-right"></i><a href="">Sessão 2</a></li>
+                            <li><i class="fa-solid fa-angles-right"></i><a href="">Sessão 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
             <div class="clear"></div>
         </div>
     </header>
 
+    <script src="https://kit.fontawesome.com/8067e48023.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript">
+        $('nav.menu-mobile > i').click(function(){
+            $(this).parent().find('ul:not(.submenu-mobile)').slideToggle();
+        })
+    </script>
 </body>
 </html>
