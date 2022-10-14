@@ -1,0 +1,165 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Helvetica;
+    }
+
+    .bg-mask{
+        width: 100%;
+        height: 100%;
+        background:#313756dc;
+    }
+
+    .container{
+        max-width: 1280px;
+        padding: 0 2%;
+        margin: 0 auto;
+    }
+
+    .clear{clear:both}
+
+    .logo{
+        padding-top: 20px;
+        color: white;
+        float: left;
+    }
+
+    header{
+        padding: 10px 0;
+        background: #37474f;
+        height: 950px;
+        /* background-image: url('../images/devs.crew.jpeg'); */
+        background-size: cover;
+        opacity: 0.8;
+    }
+
+    nav.menu-desktop{
+        float: right;
+        padding-top: 20px;
+    }
+
+    nav.menu-desktop > ul{
+        position: relative;
+        top: 4px;
+        list-style-type: none;
+    }
+
+    nav.menu-desktop > ul > li{
+        position: relative;
+        display: inline-block;
+        font-size: 16px;
+        margin: 0 15px;
+    }
+
+    nav.menu-desktop > ul > li:hover > ul.submenu-desktop{
+        display: block;
+    }
+
+    nav.menu-desktop a{
+        text-decoration: none;
+        color: white;
+    }
+
+    ul.submenu-desktop{
+        list-style-type: none;
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 20px;
+        width: 300px;
+        padding: 8px 0;
+        background: #01579b;
+    }
+
+    ul.submenu-desktop li{
+        padding: 8px;
+        border-bottom: 1px solid white;
+    }
+
+    nav.menu-desktop a:hover{
+        text-decoration: underline;
+    }
+
+    .arrows{
+        position: absolute;
+        display: flex;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .arrows i{
+        background-color: rgba(51, 51, 51, 0.584);
+        cursor: pointer;
+        font-size: 32px;
+        padding: 25px;
+        color: white;
+    }
+
+    .head-content{
+        height: 400px;
+        margin-top: 200px;
+    }
+
+    header h1{
+        font-size: 52px;
+        color: white;
+    }
+
+    header p{
+        margin-top: 110px;
+        font-size: 22px;
+        max-width: 900px;
+        color: white;
+    }
+
+    /* ------------Menu-mobile-------------- */
+
+    nav.menu-mobile{
+        float: right;
+        display: none;
+    }
+
+    nav.menu-mobile > ul{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        border-top: #ccc;
+        background: white;
+        width: 100%;
+        list-style-type: none;
+    }
+
+    nav.menu-mobile > ul > li{
+        width: 100%;
+        display: inline-block;
+        border-bottom: 1px solid rgb(86, 86, 86);
+        padding: 10px 8px;
+    }
+
+    ul.submenu-mobile{
+        list-style-type: none;
+        padding: 8px 15px;
+    }
+
+    nav.menu-mobile a{
+        text-decoration: none;
+        color: #01579b;
+    }
+
+    nav.menu-mobile > i{
+        cursor: pointer;
+        font-size: 25px;
+        color: white;
+    }
+
+    /* -----------------res----------------------- */
+
+    @media screen and (max-width: 768px){
+        nav.menu-desktop{display: none;}
+        nav.menu-mobile{display: block;}
+    }
+
