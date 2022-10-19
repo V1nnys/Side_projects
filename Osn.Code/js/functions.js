@@ -1,0 +1,3 @@
+ function ToLeft(){
+    alert('Left');
+ }

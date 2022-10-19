@@ -5,11 +5,11 @@
         font-family: Helvetica;
     }
 
-    .bg-mask{
+    /* .bg-mask{
         width: 100%;
         height: 100%;
         background:#313756dc;
-    }
+    } */
 
     .container{
         max-width: 1280px;
@@ -27,11 +27,23 @@
 
     header{
         padding: 10px 0;
-        background: #37474f;
+        background: #281945;
         height: 950px;
         /* background-image: url('../images/devs.crew.jpeg'); */
         background-size: cover;
         opacity: 0.8;
+    }
+
+    .head-content span{
+        color: orangered;
+    }
+
+    .mark{
+        width: 100px;
+        height: 7px;
+        background-color: white;
+        border-radius: 8px;
+        margin-top: 50px;
     }
 
     nav.menu-desktop{
@@ -109,7 +121,7 @@
     }
 
     header p{
-        margin-top: 110px;
+        margin-top: 80px;
         font-size: 22px;
         max-width: 900px;
         color: white;
@@ -126,24 +138,26 @@
         display: none;
         position: absolute;
         left: 0;
-        top: 40px;
+        top: 65px;
         border-top: #ccc;
         background: white;
         width: 100%;
+        height: 200px;
         list-style-type: none;
+        text-align: center;
     }
 
     nav.menu-mobile > ul > li{
         width: 100%;
         display: inline-block;
-        border-bottom: 1px solid rgb(86, 86, 86);
-        padding: 10px 8px;
+        /* border-bottom: 1px solid rgb(86, 86, 86); */
+        padding: 25px 8px;
     }
 
-    ul.submenu-mobile{
+    /* ul.submenu-mobile{
         list-style-type: none;
         padding: 8px 15px;
-    }
+    } */
 
     nav.menu-mobile a{
         text-decoration: none;
@@ -156,10 +170,37 @@
         color: white;
     }
 
+    /* -------------section-1---------------------- */
+
+    .sessao-1{
+        width: 100%;
+        height: 900px;
+        background-color: rgb(219, 219, 219);
+    }
+
+    .content-grid{
+        column-count: 2;
+        width: 100%;
+        height: 800px;
+        background-color: #798690;
+        position: relative;
+        top: 40px;
+    }
+
+    .content-grid > div{
+        background-color: #ccc;
+        height: 200px;
+    }
+
     /* -----------------res----------------------- */
 
     @media screen and (max-width: 768px){
         nav.menu-desktop{display: none;}
         nav.menu-mobile{display: block;}
+
+        .content-grid{
+            display: flex;
+            flex-direction: column;
+        }
     }
 

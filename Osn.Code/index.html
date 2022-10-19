@@ -47,38 +47,23 @@
                 <ul>
                     <li>
                         <a href="">Home</a>
-                        <ul class="submenu-mobile">
-                            <li><i class="fa-solid fa-angles-right"></i><a href="">Sessão 1</a></li>
-                            <li><i class="fa-solid fa-angles-right"></i><a href="">Sessão 2</a></li>
-                            <li><i class="fa-solid fa-angles-right"></i><a href="">Sessão 3</a></li>
-                        </ul>
                     </li>
                     <li>
                         <a href="">Sobre</a>
-                        <ul class="submenu-mobile">
-                            <li><i class="fa-solid fa-angles-right"></i><a href="">Sessão 1</a></li>
-                            <li><i class="fa-solid fa-angles-right"></i><a href="">Sessão 2</a></li>
-                            <li><i class="fa-solid fa-angles-right"></i><a href="">Sessão 3</a></li>
-                        </ul>
                     </li>
                     <li>
                         <a href="">Contato</a>
-                        <ul class="submenu-mobile">
-                            <li><i class="fa-solid fa-angles-right"></i><a href="">Sessão 1</a></li>
-                            <li><i class="fa-solid fa-angles-right"></i><a href="">Sessão 2</a></li>
-                            <li><i class="fa-solid fa-angles-right"></i><a href="">Sessão 3</a></li>
-                        </ul>
                     </li>
                 </ul>
             </nav>
             <div class="clear"></div>
             <div class="arrows">
-                <i class="fa-solid fa-angle-left"></i>
-                <i class="fa-solid fa-angle-right"></i>
+                <i class="fa-solid fa-angle-left" onclick="ToLeft()"></i>
+                <i class="fa-solid fa-angle-right" onclick="ToRight()"></i>
             </div>
             <div class="head-content">
-                <h1>Get ready for your business</br>& upgrade all aspects</h1>
-    
+                <h1>Get <span>ready</span> for your business</br>& upgrade <span>all aspects</span></h1>
+                <div class="mark"></div>
                 <p>HTML5 Template is provided for free of charge. This layout is based on Boostrap 5 CSS framework.
                 Anyone can download and edit for any professional website. Thank you for visiting us.    
                 </p>
@@ -87,6 +72,20 @@
 
         </div><!--container-->
     </header>
+    
+    <section class="sessao-1">
+        <div class="container">
+            <div class="content-grid">
+                <div class="item1">1</div>
+                <div class="item2">2</div>
+                <div class="item3">3</div>  
+                <div class="item4">4</div>
+                <div class="item5">5</div>
+                <div class="item6">6</div>
+            </div>
+
+        </div><!--container-->
+    </section><!--sessao-1-->
 
     <script src="https://kit.fontawesome.com/8067e48023.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
@@ -94,6 +93,14 @@
         $('nav.menu-mobile > i').click(function(){
             $(this).parent().find('ul:not(.submenu-mobile)').slideToggle();
         })
+
+        function ToLeft(){
+           alert('Left');
+        }
+
+        function ToRight(){
+            alert('Right');
+        }
     </script>
 </body>
 </html>
