@@ -28,11 +28,22 @@
     header{
         padding: 10px 0;
         background: #281945;
-        height: 950px;
-        /* background-image: url('../images/devs.crew.jpeg'); */
+        height: 970px;
+        background-image: url('../images/devs.crew.jpeg');
+        background-position: center;
         background-size: cover;
         opacity: 0.8;
     }
+
+    .layer {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #180146a7;
+        z-index: -1;
+      }
 
     .head-content span{
         color: orangered;
@@ -81,7 +92,7 @@
         top: 20px;
         width: 300px;
         padding: 8px 0;
-        background: #01579b;
+        background: #2a2655;
     }
 
     ul.submenu-desktop li{
@@ -102,12 +113,19 @@
         justify-content: space-between;
     }
 
+    
+
     .arrows i{
-        background-color: rgba(51, 51, 51, 0.584);
         cursor: pointer;
         font-size: 32px;
         padding: 25px;
         color: white;
+        transition: 0.3s;
+    }
+    
+    .arrows i:hover{
+        background-color: rgba(0, 0, 0, 0.236);
+        font-size: 40px;
     }
 
     .head-content{
@@ -161,7 +179,7 @@
 
     nav.menu-mobile a{
         text-decoration: none;
-        color: #01579b;
+        color: #2a1854;
     }
 
     nav.menu-mobile > i{
@@ -174,22 +192,54 @@
 
     .sessao-1{
         width: 100%;
-        height: 900px;
-        background-color: rgb(219, 219, 219);
+        height: 980px;
     }
 
     .content-grid{
         column-count: 2;
         width: 100%;
         height: 800px;
-        background-color: #798690;
+        /* background-color: #798690; */
         position: relative;
         top: 40px;
+        padding-top: 8%;
     }
 
     .content-grid > div{
-        background-color: #ccc;
+        /* background-color: #ccc; */
         height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 18px;
+        border-radius: 6px;
+        /* border: 1px solid black; */
+        padding-left: 20px;
+
+        -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.07);
+        -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.07);
+        box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.07);
+    }
+
+    .content-grid > .item1{
+        margin-top: 0;
+    }
+
+    .content-grid div > i{
+        float: left;
+        font-size: 60px;
+        color: #469a77;
+    }
+
+    .item-content{
+        float: right;
+        margin-left: 14px;
+        /* background-color: #9ca5ab; */
+        max-width: 440px;
+    }
+
+    .item-content p{
+        padding: 0 2%;
     }
 
     /* -----------------res----------------------- */
