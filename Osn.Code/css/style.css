@@ -283,6 +283,90 @@
         background-color: #469a77;
     }
 
+    /* --------------sessao-2---------------------- */
+
+    .sessao-2{
+        width: 100%;
+        height: 970px;
+        padding-top: 5%;
+    }
+
+    .title{
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-wraper{
+        width: 100%;
+        height: 700px;
+        /* background-color: #2a1854; */
+        display: flex;
+    }
+
+    .about-left{
+        width: 70%;
+        height: 500px;
+        /* background-color: blanchedalmond; */
+        padding-top: 50px;
+    }
+
+    .about-left input{
+        border: 0;
+        width: 150px;
+        height:50px;
+        font-size: 18px;
+        font-weight: bolder;
+        border-radius: 6px;
+        background-color: white;
+        margin-right: 8px;
+
+        -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.07);
+        -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.07);
+        box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.07);
+    }
+
+    .about-left input:first-of-type{
+        color: orangered;
+    }
+
+    table{
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    table tr,td{
+        padding-top: 60px;
+        /* background-color: #469a77; */
+        text-align: left;
+    }
+
+    td:first-of-type{
+        color: #469a77;
+        font-weight: bolder;
+    }
+
+    .about-right{
+        padding: 40px 10px 0 10px;
+        width: 30%;
+        /* background-color: cornflowerblue; */
+    }
+
+    .about-right p{
+        padding: 25px 0;
+        line-height: 26px;
+    }
+
+    .about-right input{
+        border: 0;
+        width: 150px;
+        height:40px;
+        border-radius: 6px;
+        color: white;
+        background-color: #469a77;
+        margin-top: 12px;
+        cursor: pointer;
+    }
+
     /* -----------------res----------------------- */
 
     @media screen and (max-width: 768px){
@@ -293,5 +377,11 @@
             display: flex;
             flex-direction: column;
         }
+
+        .ban-wrap{
+            display: block;
+            padding: 25px;
+        }
+       
     }
 
