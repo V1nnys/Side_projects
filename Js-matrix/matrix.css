@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1a1821;
+}
+
+canvas{
+    display: block;
+}
+
+input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 100px;
+    font-size: 32px;
+    text-align: center;
+    background-color: #1a1821;
+    color: green;
+    border: 0;
+    transform: translateX(-175px);
+    cursor: pointer;
+
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(6, 124, 2, 0.07);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(31, 255, 50, 0.07);
+    box-shadow: 0px 0px 11px 0px rgba(6, 245, 10, 0.612);
+}
