@@ -35,8 +35,8 @@
         left: 0;
         top: 0;
         width: 100%;
-        height: 100%;
-        background: #210b4ee3;
+        height: calc(100% + 3px);
+        background: #0b012ae0;
         z-index: -1;
       }
 
@@ -243,7 +243,7 @@
     .layer-ban {
         width: 100%;
         height: 100%;
-        background: #180146d9;
+        background: #0b012ae0;
       }
 
     .ban-wrap{
@@ -296,17 +296,19 @@
         text-align: center;
     }
 
+    .title h4{
+        color: orangered;
+    }
+
     .about-wraper{
         width: 100%;
         height: 700px;
-        /* background-color: #2a1854; */
         display: flex;
     }
 
     .about-left{
         width: 70%;
         height: 500px;
-        /* background-color: blanchedalmond; */
         padding-top: 50px;
     }
 
@@ -336,7 +338,6 @@
 
     table tr,td{
         padding-top: 60px;
-        /* background-color: #469a77; */
         text-align: left;
     }
 
@@ -348,7 +349,6 @@
     .about-right{
         padding: 40px 10px 0 10px;
         width: 30%;
-        /* background-color: cornflowerblue; */
     }
 
     .about-right p{
@@ -364,6 +364,91 @@
         color: white;
         background-color: #469a77;
         margin-top: 12px;
+        cursor: pointer;
+    }
+
+    /* -------------------sessao-3---------------- */
+
+    .sessao-3{
+        width: 100%;
+        height: 680px;
+        background-image: url('../images/form.bg.jpeg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .layer-form {
+        width: 100%;
+        height: 100%;
+        background: #0b012ae0;
+      }
+
+    .form-wraper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-wraper img{
+        width: 500px;
+    }
+
+    .formulary h4{
+        color: orangered;
+    }
+
+    .formulary h2{
+        color: white;
+        font-weight: bolder;
+        font-size: 32px;
+    }
+
+    form{
+        width: 600px;
+        height: 500px;
+        color: white;
+        padding-top: 50px;
+    }
+    
+    .formulary{
+        /* background-color: rgb(92, 111, 151); */
+        padding: 10px;
+    }
+
+    form input{
+        width: 100%;
+        height: 32px;
+        max-width: 600px;
+        margin-bottom: 7%;
+        border: 0;
+        border-radius: 4px;
+        background-color: #564b6b;
+        color: white;
+        padding: 7px;
+    }
+
+    form .w50{
+        width: 30%;
+    }
+
+    form select{
+        border: 0;
+        width: 100%;
+        height: 32px;
+        background-color: #564b6b;
+        color: white;
+    }
+
+    form input:last-child{
+        border: 0;
+        width: 150px;
+        height: 40px;
+        border-radius: 6px;
+        color: white;
+        background-color: orangered;
+        margin-top: 50px;
         cursor: pointer;
     }
 
