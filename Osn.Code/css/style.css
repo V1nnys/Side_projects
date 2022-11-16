@@ -24,7 +24,7 @@
 
     header{
         padding: 10px 0;
-        height: 970px;
+        height: 100%;
         background-image: url('../images/devs.crew.jpeg');
         background-position: center;
         background-size: cover;
@@ -36,7 +36,7 @@
         left: 0;
         top: 0;
         width: 100%;
-        height: calc(100% + 3px);
+        height: 100%;
         background: #0b012ae0;
         z-index: -1;
       }
@@ -44,6 +44,82 @@
     .head-content span{
         color: orangered;
     }
+
+    .head-content{
+        overflow-x: auto;
+    }
+
+    /* ----------------------Head-slide------------------------- */
+
+    .container-slide {
+        position: relative;
+        padding: 15px;
+        max-width: 640px;
+        margin: 0 auto;
+      }
+      
+    .gallery-wrapper {
+        overflow-x: auto;
+    }
+      
+    .arrow-left,
+    .arrow-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: auto;
+        bottom: 0;
+        font-size: 20px;
+        line-height: 250px;
+        width: 40px;
+        color: #fff;
+        transition: all 600ms ease-in-out;
+        background: linear-gradient(to left, transparent 0%, black 200%);
+        opacity: 0.1;
+        cursor: pointer;
+        border: none;
+    }
+      
+    .arrow-left:hover,
+    .arrow-right:hover {
+      opacity: 1;
+    }
+      
+    .arrow-right {
+      right: 0;
+      left: auto;
+      text-align: right;
+      background: linear-gradient(to right, transparent 0%, black 200%);
+    }
+      
+    .gallery {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 15px;
+    }
+      
+    .item {
+      width: 100%;
+      /* height: 250px; */
+      flex-shrink: 0;
+      transition: all 600ms ease-in-out;
+      opacity: 0.5;
+    }
+      
+    .current-item {
+      opacity: 1;
+    }
+      
+    .gallery-wrapper::-webkit-scrollbar {
+      display: none;
+    }
+      
+    .gallery-wrapper {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+
+    /* ----------------------Head-slide-fim----------------------- */
 
     .mark{
         width: 100px;
@@ -453,6 +529,9 @@
         margin-top: 50px;
         cursor: pointer;
     }
+
+    /* ------------------sessao-4------------------ */
+
 
     /* -----------------res----------------------- */
 
