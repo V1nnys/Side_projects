@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"> <!-- Swiper Css-->
     <link rel="stylesheet" href="css/style.css">
     <title>Osn.Code</title>
 </head>
@@ -45,8 +46,8 @@
             <div class="head-content">
                 
                 <div class="container">
-                    <button class="arrow-left control" aria-label="Previous image">◀</button>
-                    <button class="arrow-right control" aria-label="Next Image">▶</button>
+                    <button class="arrow-left control" aria-label="Previous image"><</button>
+                    <button class="arrow-right control" aria-label="Next Image">></button>
                     <div class="gallery-wrapper">
                       <div class="gallery">
                         <div class="item current-item">
@@ -67,7 +68,7 @@
                             <h1>Lorem Ipsum</h1>
                                 <div class="mark"></div>
                                 <p>Morbi nulla odio, vestibulum non iaculis quis, convallis in turpis. 
-                                    Donec at luctus mi, non bibendum elit. Integer sit amet nulla faucibus, consectetur dui lobortis, mollis sem.    
+                                   Donec at luctus mi, non bibendum elit. Integer sit amet nulla faucibus, consectetur dui lobortis, mollis sem.    
                                 </p>
                         </div>
                       </div>
@@ -206,7 +207,6 @@
 
                     <input type="button" value="Discover More">
                 </div>
-
             </div><!--about-wraper-->
 
 
@@ -245,11 +245,69 @@
     </section>
 
     <section class="sessao-4">
-        <h2>TESTIMONIALS</h2>
+        <div class="test-title">
+            <h4>TESTIMONIALS</h4>
+            <h2>WHAT THEY SAID</h2>
+        </div>
+        
+        <div class="container-sld">
+            <div class="testimonial mySwiper">
+                <div class="testi-content swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <img src="https://source.unsplash.com/random/?person" alt="" class="image">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident vitae fugit quam exercitationem eius 
+                          architecto nemo, modi possimus accusantium blanditiis ipsum quae suscipit vero ducimus. Odio repellat expedita quidem molestias.
+                        </p>
+    
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+    
+                        <div class="details">
+                            <span class="name">Mernie Lotter</span>
+                            <span class="job">Web Devaloper</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="https://source.unsplash.com/random/?woman" alt="" class="image">
+                        <p>
+                          Aenean eleifend ultricies mauris, imperdiet consectetur libero efficitur nec. Praesent elementum libero quam, 
+                          in convallis augue auctor vel. Proin fermentum diam dolor, vel tincidunt nulla tincidunt vitae.
+                        </p>
+    
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+    
+                        <div class="details">
+                            <span class="name">Steven Berns</span>
+                            <span class="job">Web Devaloper</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="https://source.unsplash.com/random/?man" alt="" class="image">
+                        <p>
+                          Curabitur molestie, diam sit amet faucibus porttitor, quam diam condimentum arcu, eget vulputate neque 
+                          diam at dui. Ut pharetra est et posuere bibendum. Vestibulum fringilla odio vel porttitor pulvinar. Proin eget 
+                          aliquet nunc. Cras a gravida diam.
+                        </p>
+    
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+    
+                        <div class="details">
+                            <span class="name">Jacky Lawest</span>
+                            <span class="job">Web Devaloper</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next nav-btn"></div>
+                <div class="swiper-button-prev nav-btn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    
     </section>
 
     <script src="https://kit.fontawesome.com/8067e48023.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script> <!-- Swiper Js-->
     <script src="./js/functions.js"></script>
 </body>
 </html>
