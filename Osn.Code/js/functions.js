@@ -2,6 +2,37 @@ $('nav.menu-mobile > i').click(function(){
    $(this).parent().find('ul').slideToggle();
 })
 
+// ===========Menu Scroll to==========
+
+const menuLinks = document.querySelectorAll('.menu-desktop a[href^="#"]');
+const menuMobile = document.querySelectorAll('.menu-mobile a[href^="#"]');
+
+function getDistanceFromTheTop(element) {
+    const id = element.getAttribute("href");
+    return document.querySelector(id).offsetTop;
+}
+
+function nativeScroll(distanceFromTheTop) {
+    window.scroll({
+        top: distanceFromTheTop,
+        behavior: "smooth",
+    });
+}
+
+function scrollToSection(event) {
+    event.preventDefault();
+    const distanceFromTheTop = getDistanceFromTheTop(event.target) -140;
+    nativeScroll(distanceFromTheTop);
+}
+
+menuLinks.forEach((link) => {
+    link.addEventListener("click", scrollToSection);
+})
+
+menuMobile.forEach((link) => {
+    link.addEventListener("click", scrollToSection);
+})
+
 //=========Head Slide==========
 
 const controls = document.querySelectorAll('.control');
@@ -41,7 +72,6 @@ controls.forEach(control => {
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
-    //spaceBetween: 30,
     grabCursor: true,
     loop: true,
     pagination: {
